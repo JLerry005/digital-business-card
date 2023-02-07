@@ -21,7 +21,7 @@ const Info = () => {
                 </a>
                 <a href='https://www.linkedin.com/in/johnxlerry/' className='info--linkedIn' target='_blank'>
                     <img className='info--img-linkedin' src={Linkedin} alt="Linkedin" />
-                    Linked
+                    LinkedIn
                 </a>
             </div>
         </div>
