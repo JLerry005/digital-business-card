@@ -1,38 +1,155 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background-color: #1a1b21;
+  color: hsl(0, 0%, 94%);
+
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #23252C;
+}
+
+.info--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 317px;
+}
+
+.info--image {
+  max-width: 317px;
+  max-height: 317px;
+  border-radius: 10px 10px 0 0;
+}
+
+.info--details {
+  padding-top: 21px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info--name {
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info--position {
+  font-size: 13px;
+  padding-top: 6.19px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  color: #02cee9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info--link {
+  font-size: 11px;
+}
+
+.info--button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.info--email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  min-width: 120px;
+  padding: 9px 13px 9px 11px;
+
+  background-color: #FFFFFF;
+  color: #374151;
+
+  border: 1px solid #D1D5DB;
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info--linkedIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  min-width: 120px;
+  padding: 9px 13px 9px 11px;
+
+  background-color: #5093E2;
+  color: #FFFFFF;
+
+  border: 1px solid #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.info--img-email {
+  background-color: white;
+}
+
+.info--img-linkedin {
+  background-color: #5093E2;
+}
+
+.about--container,
+.interest--container {
+  max-width: 317px;
+  padding-inline: 25px;
+}
+
+.about--title,
+.interest--title {
+  padding-top: 32px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.about--details,
+.interest--details {
+  font-weight: 400;
+  color: #bbbbbb;
+}
+
+.interest--container {
+  padding-bottom: 27px;
+}
+
+.footer--container {
+  background-color: #161619;
+  padding: 25px;
+  min-width: 317px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer-picture {
+  background-color: #161619;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
